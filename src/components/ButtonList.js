@@ -8,9 +8,9 @@ function ButtonList() {
             {ButtonList.map((name , index) => {
                 return (
 
-                    <div className=' mx-2'>
+                    <div  key={index} className=' mx-2'>
 
-                    <Buttons key ={index} name={name} />
+                    <Buttons name={name} />
                     </div>
                 )
             })}

@@ -4,7 +4,7 @@ import VideoContainer from './VideoContainer'
 
 function MainContainer() {
   return (
-      <div>
+      <div className='flex flex-col'>
           <ButtonList/>
           <VideoContainer/>
     </div>

@@ -1,6 +1,8 @@
 import React from 'react'
 import { toggleMenu } from './AppSlice'
 import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
+
 
 function SideBar() {
     const isToggleMenu = useSelector((store) => store.app.isToggleMenu)
@@ -8,7 +10,7 @@ function SideBar() {
     return (
         <div className='w-48 shadow-lg p-4'>
             <ul className='py-2 m-2'>
-                <li>Home</li>
+                <li><Link to="/">Home</Link></li>
                 <li>Short</li>
                 <li>Subscriction</li>
             </ul>
