@@ -37,7 +37,7 @@ function VideoCard({ info }) {
     const viewCount = formatNumber(statistics?.viewCount);
 
   return (
-    <div className='p-2 m-2 w-[31%]' >
+    <div className='p-2 m-2' >
       <img className='rounded-lg' src={thumbnails?.medium?.url} alt="" />
       <h1 className='font-bold'>{title}</h1>
       <p className=''>{channelTitle}</p>
