@@ -1,12 +1,12 @@
 import AppSlice from "../components/AppSlice";
 import { configureStore } from "@reduxjs/toolkit";
-import CacheSearch from "./CacheSearch";
+import CacheSlice from "./CacheSlice";
 
 
 const Store = configureStore({
     reducer: {
-        app: AppSlice,     
-        cache: CacheSearch
+        app: AppSlice,
+        cache: CacheSlice
     }
 })
 
